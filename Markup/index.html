@@ -1,0 +1,429 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>WSO2 IoT Device Overview</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/theme-wso2.min.css">
+        <link rel="stylesheet" href="css/font-wso2.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/ripple.css">
+        <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="css/responsive.bootstrap.min.css">
+        <script type="text/javascript"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- header -->
+        <header class="header header-default">
+            <div class="container-fluid">
+                <div class="pull-left brand">
+                    <a href="#">
+                    <img src="images/logo-inverse.svg" alt="wso2" title="wso2" class="logo">
+                    <span>IoT</span>
+                    </a>
+                </div>
+                <ul class="nav navbar-right">
+                    <li class="visible-inline-block">
+                        <a class="dropdown" data-toggle="dropdown" aria-expanded="false">
+                        <span class="icon fw-stack">
+                        <i class="fw fw-circle fw-stack-2x"></i>
+                        <i class="fw fw-user fw-stack-1x fw-inverse"></i>
+                        </span>
+                        <span class="hidden-xs add-margin-left-1x">John Doe <span class="caret"></span></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right slideInDown" role="menu">
+                            <li><a href="#">Profile Settings</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- breadcrumb -->
+        <div class="breadcrumb-wrapper">
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="icon fw fw-home"></i> <span class="hidden-xs">Home</span></a></li>
+                <li><a href="#">Devices</a></li>
+                <li class="active"><a href="#">Device Details</a></li>
+            </ol>
+        </div>
+        <!-- /breadcrumb -->
+        <div class="page-content-wrapper">
+            <!-- navbar -->
+            <div class="navbar-wrapper">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-menu-toggle" aria-expanded="false">
+                            <span class="icon fw-stack">
+                            <i class="fw fw-menu fw-stack-1x"></i>
+                            </span>
+                            </a>
+                            <div class="navbar-brand">
+                                <a href="#">Gadgets</a>
+                            </div>
+                        </div>
+                        <div id="navbar" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown">
+                                    <i class="fw fw-notification"></i>
+                                    <span class="badge badge-bubble">4</span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="dropdown-header">
+                                            <h5>Notifications</h5>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fw fw-success"></i> Lorem ipsum dolor sit amet</a></li>
+                                        <li><a href="#"><i class="fw fw-error"></i> Consectetur adipiscing elit</a></li>
+                                        <li><a href="#"><i class="fw fw-warning"></i> Vivamus sagittis elit et orci molestie</a></li>
+                                        <li><a href="#"><i class="fw fw-error"></i> Class aptent taciti sociosqu</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">See All</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </nav>
+            </div>
+            <!-- /navbar -->
+            <div class="container-fluid content-wrapper">
+                <div class="body-wrapper content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="alert alert-warning" role="alert">
+                                <i class="icon fw fw-warning"></i> Your device synchronization has faild. <a class="alert-link">Retry now.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="device-info-container">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <i class="fw fw-android device-type fw-2x"></i>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="device-info">
+                                            <h1>John Doe's Device</h1>
+                                            <h4>Samsung SM-9005</h4>
+                                            <h4>Ownership - <strong>BYOD</strong></h4>
+                                            <h4>Last contacted <strong>a moment ago</strong></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vital-strip">
+                                <p><i class="icon fw fw-battery fw-2x"></i> <span>70%</span></p>
+                                <p><i class="icon fw fw-hardware fw-2x fw-rotate-90"></i> <span>18%</span></p>
+                                <p><i class="icon fw fw-hdd fw-2x fw-rotate-90"></i> <span>13</span><span class="memory-amt">GB/16GB</span></p>
+                                <p><i class="icon fw fw-usb-drive fw-2x"></i> <span>4</span><span class="memory-amt">GB/64GB</span></p>
+                            </div>
+                            <div class="operation-container">
+                                <div class="operation-title">
+                                    <h4>Device Operations</h4>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-ringing fw-3x"></i>
+                                    <span>Ring</span>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-lock fw-3x"></i>
+                                    <span>Device Lock</span>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-clear fw-3x"></i>
+                                    <span>Clear Password</span>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-mute fw-3x"></i>
+                                    <span>Mute</span>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-message fw-3x"></i>
+                                    <span>Message</span>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-refresh fw-3x"></i>
+                                    <span>Reboot</span>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-download fw-3x"></i>
+                                    <span>Upgrade Firmware</span>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-delete fw-3x"></i>
+                                    <span>Wipe Data</span>
+                                </div>
+                                <div class="operation text-center ripple">
+                                    <i class="icon fw fw-enterprise fw-3x"></i>
+                                    <span>Enterprise Wipe</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#log">Operation Log</a></li>
+                                <li><a data-toggle="tab" href="#location">Location</a></li>
+                                <li><a data-toggle="tab" href="#app">Application</a></li>
+                                <li><a data-toggle="tab" href="#policy">Policy Compliance</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="log" class="tab-pane fade in active">
+                                    <div class="tab-actions">
+                                        <div class="action">
+                                            <div class="action-btn">
+                                                <p>Filter logs <i class="icon fw fw-down"></i></p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="action-prop">
+                                                <form class="form-inline">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Name</label>
+                                                        <div class="col-sm-10">
+                                                            <div class="input-group input-wrap res-wrap">
+                                                                <select class="form-control">
+                                                                    <option>opt1</option>
+                                                                    <option>opt2</option>
+                                                                    <option>opt3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Name</label>
+                                                        <div class="input-group input-wrap res-wrap">
+                                                            <select class="form-control">
+                                                                <option>opt1</option>
+                                                                <option>opt2</option>
+                                                                <option>opt3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Name</label>
+                                                        <div class="input-group input-wrap res-wrap">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="action">
+                                            <div class="action-btn">
+                                                <p>Filter logs <i class="icon fw fw-down"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="operation-log-container">
+                                        <table class="table table-striped table-hover table-responsive list-table display responsive nowrap data-table" id="operation-log">
+                                            <thead class="block">
+                                                <tr class="sort-row">
+                                                    <th class="content-fill no-sort"></th>
+                                                    <th>Name</th>
+                                                    <th>Position</th>
+                                                    <th>Office</th>
+                                                    <th>Age</th>
+                                                    <th>Start date</th>
+                                                    <th>Salary</th>
+                                                    <th class="no-sort"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Handlebars Template Appends Here -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="location" class="tab-pane fade">
+                                    <iframe width="100%" height="100%" frameborder="0" style="border:0"
+                                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJk_gsqyVZ4joR4UxR7brwMnA&key=AIzaSyChgf100i4rBz6neCNRyK1D05g9VLY8jvo" allowfullscreen></iframe>
+                                </div>
+                                <div id="app" class="tab-pane fade">
+                                    <div class="application">
+                                        <img src="images/fb.png">
+                                        <div class="app-info">
+                                            <h4>Facebook</h4>
+                                            <p>v1.00.00</p>
+                                        </div>
+                                        <i class="icon uninstall fw fw-delete"></i>
+                                    </div>
+                                    <div class="application">
+                                        <img src="images/messenger.png">
+                                        <div class="app-info">
+                                            <h4>Messenger</h4>
+                                            <p>v12.11.00</p>
+                                        </div>
+                                        <i class="icon uninstall fw fw-delete"></i>
+                                    </div>
+                                    <div class="application">
+                                        <img src="images/true.png">
+                                        <div class="app-info">
+                                            <h4>Truecaller</h4>
+                                            <p>v1.00.00</p>
+                                        </div>
+                                        <i class="icon uninstall fw fw-delete"></i>
+                                    </div>
+                                    <div class="application">
+                                        <img src="images/clan.png">
+                                        <div class="app-info">
+                                            <h4>Clash of Clans</h4>
+                                            <p>v1.00.00</p>
+                                        </div>
+                                        <i class="icon uninstall fw fw-delete"></i>
+                                    </div>
+                                    <div class="application">
+                                        <img src="images/drive.png">
+                                        <div class="app-info">
+                                            <h4>Google Drive</h4>
+                                            <p>v1.00.00</p>
+                                        </div>
+                                        <i class="icon uninstall fw fw-delete"></i>
+                                    </div>
+                                    <div class="application">
+                                        <img src="images/whatsapp.png">
+                                        <div class="app-info">
+                                            <h4>Whatsapp</h4>
+                                            <p>v1.00.00</p>
+                                        </div>
+                                        <i class="icon uninstall fw fw-delete"></i>
+                                    </div>
+                                </div>
+                                <div id="policy" class="tab-pane fade">
+                                    <div class="policy-item">
+                                        <i class="icon fw fw-success fw-3x policy-status"></i>
+                                        <p>
+                                            <span class="policy-name">Passcode Policy</span>
+                                            <span class="policy-platform">Android</span>
+                                        </p>
+                                        <p>
+                                            <span class="comp-type">Compliance Type : <strong>Warning</strong></span>
+                                            <span class="ownership-type">Ownership type : <strong>BYOD</strong></span>
+                                        </p>
+                                        <div class="actions">
+                                            <div class="action-btn ripple">
+                                                <p><i class="icon fw fw-view fw-2x"></i> <span>View Policy </span></p>
+                                            </div>
+                                            <div class="action-btn ripple">
+                                                <p><i class="icon fw fw-refresh fw-2x fw-flip-horizontal"></i> <span>Revoke Policy </span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-loader">
+                    <div class="loader">
+                        <i class="fw fw-wso2-logo fw-pulse fw-3x"></i><span>contacting device...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <p>Theme WSO2 v2.0.0 | © 2016 <a href="http://wso2.com/" target="_blank"><i class="icon fw fw-wso2"></i> Inc</a>.</p>
+            </div>
+        </footer>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="js/theme-wso2.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap.min.js"></script>
+        <script src="js/dataTables.responsive.js"></script>
+        <script src="js/dataTables.wso2.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ripple.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+            	$(".page-loader").delay(1500).fadeOut("500");
+            
+            	//The last parameter is the callback that is fired after the animation
+            	$('.content').delay(2500).animate({opacity: '1'}, 500);
+            });
+            
+            var data = [{
+            	"id" : "x2s1A001",
+            	"name" : "Device Location",
+            	"completed_time" : "Tue May 16 2017 14:53:42 GMT+0530",
+            	"status" : "COMPLETED",
+            	"history" : [{
+            		"status" : "REQUESTED",
+            		"time_stamp" : "Tue May 16 2017 14:53:42 GMT+0530",
+            	},{
+            		"status" : "PENDING",
+            		"time_stamp" : "Tue May 16 2017 14:53:42 GMT+0530",
+            	},{
+            		"status" : "COMPLETED",
+            		"time_stamp" : "Tue May 16 2017 14:53:42 GMT+0530",
+            	}]
+            }]
+            
+            var table = $('#operation-log').DataTable({
+                   data : data,
+                   autoWidth: false,
+                   columns: [
+                   	{'data' : 'name'},
+                   	{'data' : 'completed_time'},
+                   	{'data' : 'status', 'className' : 'extended-log-data'},
+                   	{'data' : 'history'}
+                         ],
+                   "order": [[1, 'asc']],
+                   "fnCreatedRow": function(nRow, aData, iDataIndex) {
+                   	$('td:eq(0)', nRow)
+                           .attr('data-search', aData.Device_Type)
+                           .attr('data-display', aData.Device_Type)
+                           .addClass('remove-padding icon-only content-fill');
+                      },
+                      "columnDefs" : [{
+                      	"targets": 3,
+                          "visible" : false
+                      },{
+                      	"width" : "100%",
+                          "targets": 2,
+                          "render": function (data, type, full, meta) {
+                          	return '<i class="icon fw fw-check"></i><span> ' + data + ' </span><i class="icon fw fw-down"></i>';
+                          }
+                     	}]
+               });
+
+            $('#operation-log tbody').on('click','td.extended-log-data', function(){
+				var tr = $(this).closest('tr');
+				var row = table.row( tr );
+
+				if ( row.child.isShown() ) {
+				    // This row is already open - close it
+				    row.child.hide();
+				    tr.removeClass('shown');
+				}
+				else {
+				    // Open this row
+				    row.child( renderLogDetails(row.data()) ).show();
+				    tr.addClass('shown');
+				}
+            })
+
+            function renderLogDetails(obj){
+            	return '<div class="log-data"></div>';
+            }
+            
+        </script>
+    </body>
+</html>
