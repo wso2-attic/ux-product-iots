@@ -1,19 +1,21 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>WSO2 IoT Device Overview</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="css/theme-wso2.min.css">
         <link rel="stylesheet" href="css/font-wso2.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/main.css">
+        
         <link rel="stylesheet" href="css/ripple.css">
         <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
         <link rel="stylesheet" href="css/responsive.bootstrap.min.css">
-        <script type="text/javascript"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -62,15 +64,15 @@
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+	                            <span class="sr-only">Toggle navigation</span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-menu-toggle" aria-expanded="false">
-                            <span class="icon fw-stack">
-                            <i class="fw fw-menu fw-stack-1x"></i>
-                            </span>
+	                            <span class="icon fw-stack">
+	                            	<i class="fw fw-menu fw-stack-1x"></i>
+	                            </span>
                             </a>
                             <div class="navbar-brand">
                                 <a href="#">Gadgets</a>
@@ -80,8 +82,8 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown">
                                     <a data-toggle="dropdown">
-                                    <i class="fw fw-notification"></i>
-                                    <span class="badge badge-bubble">4</span>
+	                                    <i class="fw fw-notification"></i>
+	                                    <span class="badge badge-bubble">4</span>
                                     </a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li class="dropdown-header">
@@ -105,19 +107,15 @@
             <!-- /navbar -->
             <div class="container-fluid content-wrapper">
                 <div class="body-wrapper content">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="alert alert-warning" role="alert">
-                                <i class="icon fw fw-warning"></i> Your device synchronization has faild. <a class="alert-link">Retry now.</a>
-                            </div>
-                        </div>
+                    <div class="alert alert-warning" role="alert">
+                        <i class="icon fw fw-warning"></i> Your device synchronization has faild. <a class="alert-link">Retry now.</a>
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="device-info-container">
                                 <div class="row">
                                     <div class="col-lg-3">
-                                        <i class="fw fw-android device-type fw-2x"></i>
+                                        <i class="icon fw fw-android device-type fw-2x"></i>
                                     </div>
                                     <div class="col-lg-9">
                                         <div class="device-info">
@@ -129,6 +127,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- todo -->
                             <div class="vital-strip">
                                 <p><i class="icon fw fw-battery fw-2x"></i> <span>70%</span></p>
                                 <p><i class="icon fw fw-hardware fw-2x fw-rotate-90"></i> <span>18%</span></p>
@@ -176,6 +175,7 @@
                                     <span>Enterprise Wipe</span>
                                 </div>
                             </div>
+                            <!-- todo -->
                             <div class="clearfix"></div>
                         </div>
                         <div class="col-lg-8">
@@ -343,14 +343,17 @@
                 <p>Theme WSO2 v2.0.0 | © 2016 <a href="http://wso2.com/" target="_blank"><i class="icon fw fw-wso2"></i> Inc</a>.</p>
             </div>
         </footer>
+        <!-- todo -->
         <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="js/theme-wso2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
         <script src="js/dataTables.bootstrap.min.js"></script>
         <script src="js/dataTables.responsive.js"></script>
         <script src="js/dataTables.wso2.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/theme-wso2.min.js"></script>
+        
         <script src="js/ripple.js"></script>
+        
         <script type="text/javascript">
             $(window).load(function() {
             	$(".page-loader").delay(1500).fadeOut("500");
@@ -362,68 +365,126 @@
             var data = [{
             	"id" : "x2s1A001",
             	"name" : "Device Location",
-            	"completed_time" : "Tue May 16 2017 14:53:42 GMT+0530",
+            	"completed_time" : "Tue May 16 2017 14:55:42 GMT+0530",
             	"status" : "COMPLETED",
             	"history" : [{
             		"status" : "REQUESTED",
             		"time_stamp" : "Tue May 16 2017 14:53:42 GMT+0530",
             	},{
             		"status" : "PENDING",
-            		"time_stamp" : "Tue May 16 2017 14:53:42 GMT+0530",
+            		"time_stamp" : "Tue May 16 2017 14:54:42 GMT+0530",
             	},{
             		"status" : "COMPLETED",
+            		"time_stamp" : "Tue May 16 2017 14:55:42 GMT+0530",
+            	}]
+            },{
+            	"id" : "x2s1A002",
+            	"name" : "Device Location",
+            	"completed_time" : "Tue May 16 2017 14:55:42 GMT+0530",
+            	"status" : "COMPLETED",
+            	"history" : [{
+            		"status" : "REQUESTED",
             		"time_stamp" : "Tue May 16 2017 14:53:42 GMT+0530",
+            	},{
+            		"status" : "PENDING",
+            		"time_stamp" : "Tue May 16 2017 14:54:42 GMT+0530",
+            	},{
+            		"status" : "COMPLETED",
+            		"time_stamp" : "Tue May 16 2017 14:55:42 GMT+0530",
             	}]
             }]
             
             var table = $('#operation-log').DataTable({
-                   data : data,
-                   autoWidth: false,
-                   columns: [
-                   	{'data' : 'name'},
-                   	{'data' : 'completed_time'},
-                   	{'data' : 'status', 'className' : 'extended-log-data'},
-                   	{'data' : 'history'}
-                         ],
-                   "order": [[1, 'asc']],
-                   "fnCreatedRow": function(nRow, aData, iDataIndex) {
-                   	$('td:eq(0)', nRow)
-                           .attr('data-search', aData.Device_Type)
-                           .attr('data-display', aData.Device_Type)
-                           .addClass('remove-padding icon-only content-fill');
-                      },
-                      "columnDefs" : [{
-                      	"targets": 3,
-                          "visible" : false
-                      },{
-                      	"width" : "100%",
-                          "targets": 2,
-                          "render": function (data, type, full, meta) {
-                          	return '<i class="icon fw fw-check"></i><span> ' + data + ' </span><i class="icon fw fw-down"></i>';
-                          }
-                     	}]
-               });
+               data : data,
+               autoWidth: false,
+               columns: [
+               	{'data' : 'name'},
+               	{'data' : 'completed_time'},
+               	{'data' : 'status', 'className' : 'extended-log-data'},
+               	{'data' : 'history'}
+                     ],
+               "order": [[1, 'asc']],
+               "fnCreatedRow": function(nRow, aData, iDataIndex) {
+               		$('td:eq(0)', nRow)
+                       .attr('data-search', aData.Device_Type)
+                       .attr('data-display', aData.Device_Type)
+                       .addClass(' icon-only content-fill');
 
+                    $('td:eq(1), td:eq(2)', nRow).addClass('text-right');
+                    $('td:eq(2)', nRow).addClass('log-record-status')
+
+              	},
+                  	"columnDefs" : [{
+                  	"targets": 3,
+                  	"visible" : false
+              	},{
+              		"width" : "100%",
+                  	"targets": 2,
+                  	"render": function (data, type, full, meta) {
+                      	return '<i class="icon fw fw-success"></i><span> ' + data + ' </span><i class="icon fw fw-down"></i>';
+                  	}
+         		}]
+           	});
+            
             $('#operation-log tbody').on('click','td.extended-log-data', function(){
-				var tr = $(this).closest('tr');
-				var row = table.row( tr );
-
-				if ( row.child.isShown() ) {
-				    // This row is already open - close it
-				    row.child.hide();
-				    tr.removeClass('shown');
-				}
-				else {
-				    // Open this row
-				    row.child( renderLogDetails(row.data()) ).show();
-				    tr.addClass('shown');
-				}
+	            var tr = $(this).closest('tr');
+	            var row = table.row( tr );
+	            
+	            if ( row.child.isShown() ) {
+	            	row.child.hide();
+	            	$(row.child()).removeClass('log-data-row');
+	            	tr.removeClass('shown');
+	            }
+	            else {
+		            row.child( renderLogDetails(row.data()) ).show();
+		            $(row.child()).addClass('log-data-row');
+	            	tr.addClass('shown');
+	            }
             })
-
+            
             function renderLogDetails(obj){
-            	return '<div class="log-data"></div>';
+            	var logStream = '<div class="log-data">';
+
+
+
+            	Object.entries(obj.history).forEach(
+				    ([key, entry]) => {
+				    	logStream += 	'<div class="row log-entry">'+
+		            						'<div class="col-lg-8">'+
+						        				'<div class="log-status"><i class="icon fw '+ getLogStatusIcon(entry.status) +' "></i>'+
+						        				'<span>' + entry.status + '</span></div>'+
+						        			'</div>'+
+						        			'<div class="col-lg-4">'+
+						        				'<div class="log-time text-right"><span>'+ entry.time_stamp +'</span></div>'+
+						        			'</div>'+
+				        				'</div>';
+				    }
+				);
+
+				logStream += '</div></div>';
+
+				return logStream;
+
+				function getLogStatusIcon(entry){
+					switch(entry) {
+					    case 'COMPLETED':
+					        return 'fw-success'
+					        break;
+					    case 'PENDING':
+					        return 'fw-pending'
+					        break;
+					    default:
+					        return 'fw-info'
+					}
+				}
+
             }
+
+
             
         </script>
+
+        
+
     </body>
 </html>
