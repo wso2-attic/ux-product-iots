@@ -225,14 +225,15 @@
 }
 
 
-.table.list-table:not(.grid-view)>tbody>tr>td, .table.list-table:not(.grid-view)>tbody>tr>th{
-    background-color: #eaeaea;
+#operation-log tr td{
+    border-bottom: 15px solid #fff !important;
 }
-.table.table-hover>tbody>tr:hover td:not(.dataTables_empty){
-    background-color: inherit !important;
+#operation-log tr.shown td{
+    border-bottom: none !important;
 }
 .log-data-row td{
     padding: 0px !important;
+    border-bottom: 15px solid #fff !important;
 }
 .log-data{
     background-color: #f6f6f6;
@@ -298,4 +299,23 @@
 
 .dataTablesTop{
 	display: none;
+}
+
+.table.list-table:not(.grid-view)>tbody>tr>td, .table.list-table:not(.grid-view)>tbody>tr>th{
+    background-color: #eaeaea;
+}
+.table.table-hover>tbody>tr:hover td:not(.dataTables_empty){
+    background-color: inherit !important;
+}
+.table-hover>tbody>tr:hover,{
+    background-color: 
+}
+.table.list-table>tbody>tr:nth-of-type(even), .table.list-table>tbody>tr:nth-of-type(odd){
+    background-color: #eaeaea;
+}
+.table.table-hover>tbody>tr:hover td:not(.dataTables_empty){
+    background-color: inherit !important;
+}
+.table.table-hover>tbody>tr:hover td.log-record-status{
+    background-color: #4c4c4c !important;
 }
