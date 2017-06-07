@@ -224,6 +224,62 @@
     align-self: center;
 }
 
+
+.table.list-table:not(.grid-view)>tbody>tr>td, .table.list-table:not(.grid-view)>tbody>tr>th{
+    background-color: #eaeaea;
+}
+.table.table-hover>tbody>tr:hover td:not(.dataTables_empty){
+    background-color: inherit !important;
+}
+.log-data-row td{
+    padding: 0px !important;
+}
+.log-data{
+    background-color: #f6f6f6;
+    padding: 0px 20px;
+}
+.log-data:after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #ced8db;
+    top: 0;
+    left: 50px;
+}
+.log-record-status{
+    background-color: #4c4c4c !important;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+.log-record-status i:first-child{
+    float: left;
+    line-height: 19px;
+    padding: 0px 10px 0px 0px;
+}
+.log-record-status span{
+    float: left;
+    line-height: 17px;
+}
+.log-status{
+    padding-left: 14px;
+    z-index: 10;
+    position: relative;
+}
+.log-status i{
+    margin: 0px 10px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+}
+.log-entry{
+   padding: 15px 0px;
+}
+.log-entry:not(:first-child){
+    padding-top: 0px;
+}
+
+
 /*
  * custom css fixes 
  */
