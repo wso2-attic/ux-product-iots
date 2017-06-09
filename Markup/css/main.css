@@ -115,29 +115,41 @@
     float: right;
     cursor: pointer;
     position: relative;
+    margin-left: 10px;
+    ma
 }
 .tab-actions .action{
     float: right;
     margin-left: 10px;
 }
-.tab-actions .action p{
+.tab-actions .action-btn.show p{
+    margin: 0 0 10px;
+}
+.tab-actions .action-btn p{
+    margin: 0px;
+}
+.tab-actions {
 	margin: 0px;
 }
-.tab-actions .action i{
-	padding: 0px 0px 0px 10px;
-}
-.tab-actions .action .action-prop{
-    position: absolute;
+.tab-actions .action-prop{
     padding: 10px;
     background: #ebebeb;
     width: 100%;
-    left: 0px;
+    margin-bottom: 10px;
 }
 .tab-action-active{
     padding-bottom: 15px !important;
 }
-.action-prop{
-	display: none;
+.action-btn-container:after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.input-group .fw{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
 }
 
 .vital-strip{
