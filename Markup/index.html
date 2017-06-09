@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/ripple.css">
         <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
         <link rel="stylesheet" href="css/responsive.bootstrap.min.css">
+        <link rel="stylesheet" href="css/daterangepicker.css">
 
         <link rel="stylesheet" href="css/main.css">
 
@@ -188,47 +189,48 @@
                             <div class="tab-content">
                                 <div id="log" class="tab-pane fade in active">
                                     <div class="tab-actions">
-                                        <div class="action">
-                                            <div class="action-btn">
-                                                <p>Filter logs <i class="icon fw fw-down"></i></p>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div class="action-prop">
-                                                <form class="form-inline">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Name</label>
-                                                        <div class="col-sm-10">
-                                                            <div class="input-group input-wrap res-wrap">
-                                                                <select class="form-control">
-                                                                    <option>opt1</option>
-                                                                    <option>opt2</option>
-                                                                    <option>opt3</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
+                                    	<div class="action-btn-container">
+                                    		<div class="action-btn show filter">
+	                                            <p>Filter logs <i class="icon fw fw-down"></i></p>
+	                                        </div>
+
+	                                        <div class="action-btn">
+	                                            <p>Download</p>
+	                                        </div>
+                                    	</div>
+                                        <div class="action-prop download-log">
+                                            <form class="form-inline row">
+                                                <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                                                    <label class="control-label">Operations : </label>
+                                                    <div class="input-group input-wrap res-wrap">
+                                                        <select class="form-control">
+                                                            <option>Completed</option>
+                                                            <option>Pending</option>
+                                                            <option>Requested</option>
+                                                        </select>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label">Name</label>
-                                                        <div class="input-group input-wrap res-wrap">
-                                                            <select class="form-control">
-                                                                <option>opt1</option>
-                                                                <option>opt2</option>
-                                                                <option>opt3</option>
-                                                            </select>
-                                                        </div>
+                                                </div>
+                                                <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                                                    <label class="control-label">Status : </label>
+                                                    <div class="input-group input-wrap res-wrap">
+                                                        <select class="form-control">
+                                                            <option>Completed</option>
+                                                            <option>Pending</option>
+                                                            <option>Requested</option>
+                                                        </select>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label">Name</label>
-                                                        <div class="input-group input-wrap res-wrap">
-                                                        </div>
+                                                </div>
+                                                <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                                    <label class="control-label">Date Range : </label>
+                                                    <div class="input-group input-wrap res-wrap">
+                                                    	<input type="text" class="form-control" name="logrange" />
+                                                    	<i class="fw fw-calendar"></i>
                                                     </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="action">
-                                            <div class="action-btn">
-                                                <p>Filter logs <i class="icon fw fw-down"></i></p>
-                                            </div>
+                                                </div>
+                                                <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                                    <button type="button" class="btn btn-primary add-margin-top-4x">Filter</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
@@ -346,6 +348,8 @@
         <!-- todo -->
         <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/daterangepicker.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
         <script src="js/dataTables.bootstrap.min.js"></script>
         <script src="js/dataTables.responsive.js"></script>
@@ -361,6 +365,22 @@
             	//The last parameter is the callback that is fired after the animation
             	$('.content').delay(2500).animate({opacity: '1'}, 500);
             });
+
+            $('input[name="logrange"]').daterangepicker();
+
+            $('.filter').click((e)=>{
+            	var propBox = $('.download-log');
+            	if(propBox.is(':visible')){
+            		propBox.slideUp(()=>{
+            			$(e.currentTarget).removeClass('show').find('.fw-down').removeClass('fw-down').addClass('fw-right');
+            		});
+            		
+            	}else{
+            		propBox.slideDown(()=>{
+            			$(e.currentTarget).addClass('show').find('.fw-right').removeClass('fw-right').addClass('fw-down');
+            		});
+            	}
+            })
             
             var data = [{
             	"id" : "x2s1A001",
